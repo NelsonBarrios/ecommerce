@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head') %>
+
+<body>
+	<%- include('partials/header') %>
+
+	<div class="signup-form col-12">
+		<form action="" method="POST" enctype="multipart/form-data" id="register">
+			<div class="signup-form col-12">
+
+			<h2><%= title %></h2>
+					
+			<img id="preview" src= "" alt="" class="fotop"/>
+		    </div>
+				<div class="form-row">
+
+					<div class="form-group col-12 col-xl-6">
+					<label for="nombre"></label>
+					<input type="text" class="form-control <%= (typeof old != 'undefined' && old.name)?"is-valid":(typeof errors != 'undefined' && errors.name)?"is-invalid": ""  %>" id="nombre" value="<%= (typeof old != 'undefined' && old.name)?old.name:'' %>" placeholder="Nombre"  name="nombre" />
+											<small class="text-danger" id="errorNombre"><%= (typeof errors != 'undefined' && errors.nombre)?errors.nombre.msg: "" %>
+											</small>
+										</div>
+
+										<div class="form-group col-12 col-xl-6">
+											<label for="apellido"></label>
+											<input type="text"
+												class="form-control <%= (typeof old != 'undefined' && old.apellido)?"is-valid":(typeof errors != 'undefined' && errors.apellido)?"is-invalid": ""  %>"
+												id="apellido"
+												value="<%= (typeof old != 'undefined' && old.apellido)?old.apellido:'' %>"
+												placeholder="Apellido" name="apellido" />
+											<small
+												class="text-danger" id="errorApellido"><%= (typeof errors != 'undefined' && errors.apellido)?errors.apellido.msg: "" %>
+											</small>
+										</div>
+
+									</div>
+
+									<div class="form-row">
+										<div class="form-group col-12 col-xl-6">
+											<label for="pass"></label>
+											<input type="password"
+												class="form-control <%= (typeof errors != 'undefined' && errors.pass)?"is-invalid": ""  %>"
+												id="pass" placeholder="Contraseña" name="pass" />
+											<small
+												class="text-danger" id="errorPass"><%= (typeof errors != 'undefined' && errors.pass)?errors.pass.msg: "" %>
+											</small>
+										</div>
+
+										<div class="form-group col-12 col-xl-6">
+											<label for="pass2"></label>
+											<input type="password"
+												class="form-control <%= (typeof errors != 'undefined' && errors.pass2)?"is-invalid": ""  %>"
+												id="pass2" placeholder="Reingresar Contraseña" name="pass2" />
+											<small
+												class="text-danger" id="errorPass2"><%= (typeof errors != 'undefined' && errors.pass2)?errors.pass2.msg: "" %>
+											</small>
+
+										</div>
+
+									</div>
+									<div class="form-row">
+										<div class="form-group col-12 col-xl-6">
+											<label for="email"></label>
+											<input type="email"
+												class="form-control <%= (typeof old != 'undefined' && old.email && !errors.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>"
+												id="email"
+												value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>"
+												placeholder="Email" name="email" />
+											<small
+												class="text-danger" id="errorEmail"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
+											</small>
+										</div>
+
+										<div class="form-group col-12 col-xl-6">
+											<div>
+												<label for="imagen"></label>
+												<input type="file" accept="image/png, .jpeg, .jpg, image/gif" class="form-control"   <%= (typeof old != 'undefined' && old.imagen)?"is-valid":(typeof errores != 'undefined' && errores.imagen)?"is-invalid": ""  %>"
+												 id="imagen" name = "imagen">
+												
+												<small class="text-danger" id="errorImagen">
+												<%= (typeof errores != 'undefined' && errores.imagen)?errores.imagen.msg: "" %> 
+												</small>
+											</div>
+										</div>
+
+									</div>
+									<div class="form-row">
+										<div class="col-12 col-lg-6 mt-2">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox"
+													class="custom-control-input <%= (typeof old != 'undefined' && old.bases)?"is-valid":(typeof errors != 'undefined' && errors.bases)?"is-invalid": ""  %>"
+													id="customCheck1" name="bases">
+												<label class="custom-control-label" for="customCheck1">Acepto las bases
+													y
+													condiciones</label><br>
+												<a href="" class="text-info">ver bases y condiciones</a><br>
+
+												<small
+													class="text-danger" id="errorBases"><%= (typeof errors != 'undefined' && errors.bases)?errors.bases.msg: "" %>
+												</small>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6 mt-2">
+											<button type="submit" class="btn btn-success btn-lg btn-block">
+												Registrarse
+											</button>
+											<small id="msgError" class="text-danger"></small>
+										</div>
+
+									</div>
+								</div>
+							</form>
+	</div>
+
+	<%- include('partials/footer') %>
+</body>
+
+</html>

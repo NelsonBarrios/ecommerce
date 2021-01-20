@@ -1,0 +1,33 @@
+@import "style.css";
+h2{
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.signup-form{
+    padding-bottom: 30px;
+}
+.formulario{
+    background-color: white;
+    border-radius: 11px;
+    padding-bottom: 12px;
+}
+.formulario img{
+    padding: 28px;
+    border-radius: 79px;
+}
+form .boton{
+    padding: 17px;
+}
+form .boton .subir{
+    background-color: #00adb5;
+    border-radius: 5px;
+    color: white;
+}
+#eliminar{
+    border-radius: 5px;
+    color: white;
+    padding-left: 15px;
+    position: relative;
+    left: 17px;
+    height: 35px;
+}
