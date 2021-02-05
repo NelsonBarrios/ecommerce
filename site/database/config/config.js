@@ -1,23 +1,23 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
+    "username": "bdf75bc59ac61c",
+    "password": 0c555644,
     "database": "cell_db",
-    "host": "127.0.0.1",
+    "host": "us-cdbr-east-03.cleardb.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
+    "username": "bdf75bc59ac61c",
+    "password": 0c555644,
     "database": "database_test",
-    "host": "127.0.0.1",
+    "host": "us-cdbr-east-03.cleardb.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "username": "bdf75bc59ac61c",
+    "password": 0c555644,
     "database": "database_production",
-    "host": "127.0.0.1",
+    "host": "us-cdbr-east-03.cleardb.com",
     "dialect": "mysql"
   }
 }
