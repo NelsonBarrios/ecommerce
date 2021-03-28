@@ -94,7 +94,7 @@ Utilizamos la plataforma [Trello](https://trello.com/b/JRpKlpfZ/grupo16cell), c√
 - *Huespedes ven el home y su fomulario de registro e ingreso*
 - *Usuarios tienen la posibilidad de acceder al carrito*
 - *Deben crearse un usuario para poder navegar en la pagina con las ventajas antes mencionadas*
-- *Usuario admin para tener acceso a las funciones de crude tanto de usuarios como productos: -Emani: santiagoeojeda@gmail.com -Password: walking dead (incluye el espacio)*
+- *Usuario admin para tener acceso a las funciones de crude tanto de usuarios como productos: -Email: nelson.barrios3@gmail.com -Password: 123456*
 
 ## Sprint 5
 
@@ -108,5 +108,5 @@ Utilizamos la plataforma [Trello](https://trello.com/b/JRpKlpfZ/grupo16cell), c√
 ## Sprint 6
 
 - *Implementamos validaciones, tanto por back-end como por front-end, en los formularios de registro y logeo de usuarios, en cuanto a productos pudimos aplicarlo en la carga de productos y la edicion del mismo.*
-- *USUARIO ADMIN: santiagoeojeda@gmail.com PASSWORD: walking dead* 
+- *USUARIO ADMIN: nelson.barrios3@gmail.com PASSWORD: 123456*
 
